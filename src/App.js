@@ -1,17 +1,24 @@
-import './App.css';
+import "./App.css";
+
+import {
+  Home,
+  Projects,
+  Skills,
+  Experience,
+  NavBar,
+  Footer,
+} from "./components/views/index";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <table id="table">
-          <th>
-            Name
-          </th>
-          <tr>
-            <td>Enter your name here</td>
-          </tr>
-        </table>
+        <NavBar />
+        <Home />
+        <Experience />
+        <Skills />
+        <Projects />
+        <Footer />
       </header>
     </div>
   );
